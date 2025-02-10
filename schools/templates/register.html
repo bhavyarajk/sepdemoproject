@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% block content %}
+<div class="container mt-5">
+  <div class="mx-auto border border-2 border-danger p-4 w-25">
+  <h2 class="text-center">Register</h2>
+  <form method="POST">
+
+    {% csrf_token %}
+    <table>
+      {{form.as_table}}
+    </table>
+
+    <input type="submit" class="btn btn-danger"> </form>
+</div>
+</div>
+{% endblock %}
